@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .reply tr td {
+      border-top: 1px solid black;
+      padding: 4px;
+    }
+    .list {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .list tr td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<form action="" method="post">
+  <label for="name">이름</label>
+  <input type="text" id="name">
+  <br>
+  <label for="dept">부서</label>
+  <input type="text" id="dept">
+  <br>
+  <label for="level">직책</label>
+  <input type="text" id="level">
+  <br>
+  <label for="image">사진</label>
+  <input type="file" id="image">
+  <br> <br>
+  <button style="background: red; color: white; border: 0">새 사원 추가</button>
+</form>
+<hr>
+<button>선택 삭제</button>
+<label for="search">검색</label>
+<select name="search" id="search">
+  <option value="이름">이름</option>
+</select>
+<input type="text">
+<br>
+<table class="list">
+  <tr bgcolor="orange">
+    <td><input type="checkbox"></td>
+    <td>번호</td>
+    <td>사진</td>
+    <td>사원명</td>
+    <td>부서</td>
+    <td>직급</td>
+    <td>수정</td>
+    <td>삭제</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox"></td>
+    <td>1043</td>
+    <td><img src="./img_1.png" alt=""></td>
+    <td>홍길동</td>
+    <td>개발</td>
+    <td>대리</td>
+    <td><button>edit</button></td>
+    <td><button>delete</button></td>
+  </tr>
+</table>
+<br>
+<table class="reply" cellspacing="0">
+  <tr>
+    <td>번호</td>
+    <td>댓글 내용</td>
+    <td>작성자</td>
+    <td>수정</td>
+    <td>삭제</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>멋진 사진입니다</td>
+    <td>박문수</td>
+    <td>수정</td>
+    <td>삭제</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>좋아요^^ 퍼가요~</td>
+    <td>일지매</td>
+    <td>수정</td>
+    <td>삭제</td>
+  </tr>
+  <tr>
+    <td colspan="5">댓글<input type="text">작성자 <input type="text"> <button>댓글입력</button></td>
+  </tr>
+</table>
+</body>
+</html>

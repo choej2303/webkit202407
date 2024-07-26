@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1335d419-ccf7-4b2e-8432-a94e4011e122" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/0726/text_context.html" afterDir="false" />
+    <list default="true" id="1335d419-ccf7-4b2e-8432-a94e4011e122" name="변경" comment="날짜별로 파일 분리, 2일차 코드 추가">
+      <change afterPath="$PROJECT_DIR$/0726/employee_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0726/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0726/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0726/nested_lst.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0726/semantic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0726/table_span.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0726/todolist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/0725/hello-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/0725/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0726/text_context.html" beforeDir="false" afterPath="$PROJECT_DIR$/0726/text_context.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +86,24 @@
       <option name="presentableId" value="Default" />
       <updated>1721882294911</updated>
       <workItem from="1721882296005" duration="9385000" />
-      <workItem from="1721956159653" duration="908000" />
+      <workItem from="1721956159653" duration="12585000" />
     </task>
+    <task id="LOCAL-00001" summary="날짜별로 파일 분리, 2일차 코드 추가">
+      <option name="closed" value="true" />
+      <created>1721957288497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721957288497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="날짜별로 파일 분리, 2일차 코드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="날짜별로 파일 분리, 2일차 코드 추가" />
   </component>
 </project>
