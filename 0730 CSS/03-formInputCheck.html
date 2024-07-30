@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>JS Form Validation</h1>
+<form action="" id="myForm">
+  제목 : <input type="text" name="title">
+  <br>
+  이름 : <input type="text" name="name">
+  <br>
+  내용 : <textarea name="content" id=""></textarea>
+  <br>
+  <input type="submit" value="저장">
+</form>
+<script>
+  var myForm = document.getElementById('myForm')
+  myForm.onsubmit = function (e) {
+    e.preventDefault()
+    if (myForm.title === '')
+    {
+      alert('제목을 입력하시오')
+      myForm.title.focus()
+    }
+    if (myForm.name === '')
+    {
+      alert('이름을 입력하시오')
+      myForm.name.focus()
+    }
+    if (myForm.content === '')
+    {
+      alert('내용을 입력하시오')
+      myForm.content.focus()
+    }
+    // 모든 유효성 검사가 통과되면
+    myForm.method = 'get'
+    myForm.submit()
+  }
+</script>
+</body>
+</html>

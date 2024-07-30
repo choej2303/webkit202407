@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>간단한 계산기</h1>
+<form action="">
+    <fieldset>
+        <legend>계산기</legend>
+        <input type="text" size="2" value="0" class="hang1">
+        <select name="" id="oper">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" size="2" value="0" class="hang2">
+        <button type="button" class="resultBtn">=</button>
+        <span class="resultArea">0</span>
+    </fieldset>
+</form>
+<script>
+    var hang1 = document.getElementsByClassName("hang1")[0];
+    var hang2 = document.querySelectorAll('.hang2')[0];
+    var resultBtn = document.querySelector('.resultBtn');
+    var resultArea = document.querySelector('.resultArea');
+    var oper = document.getElementById('oper');
+
+    resultBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // 폼 제출 방지
+        // var num1 = parseInt(hang1.value);
+        // var num2 = parseInt(hang2.value);
+        // var op = oper.value;
+        // var res;
+        //
+        // if (op === '+')
+        //     res = num1 + num2;
+        // else if (op === '-')
+        //     res = num1 - num2;
+        // else if (op === '*')
+        //     res = num1 * num2;
+        // else if (op === '/')
+        //     res = num1 / num2;
+        //
+        // if (res < 0)
+        //     res = 0;
+        // resultArea.textContent = res;
+
+        resultArea.innerHTML = eval(hang1.value + oper.value + hang2.value)
+    });
+</script>
+</body>
+</html>

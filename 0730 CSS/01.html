@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    input[name=input3] {
+        width: 200px;
+        padding: 10px;
+        transition: width .4s cubic-bezier(0,1,1,-0.01);
+    }
+    input[name=input3]:focus {
+        width: 100vw;
+        padding: 10px;
+        background-color: pink;
+    }
+</style>
+<body>
+<h1>HTML Form 스타일 설정</h1>
+
+<form action="">
+    <fieldset>
+        <legend>기본 정보</legend>
+        <input type="text" name="input3">
+    </fieldset>
+</form>
+</body>
+</html>

@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1335d419-ccf7-4b2e-8432-a94e4011e122" name="변경" comment="날짜별로 파일 분리, 2일차 코드 추가">
-      <change afterPath="$PROJECT_DIR$/0726/employee_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0726/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0726/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0726/nested_lst.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0726/semantic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0726/table_span.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0726/todolist.html" afterDir="false" />
+    <list default="true" id="1335d419-ccf7-4b2e-8432-a94e4011e122" name="변경" comment="실습 파일 추가">
+      <change afterPath="$PROJECT_DIR$/0730 CSS/01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0730 CSS/02-calculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0730 CSS/03-formInputCheck.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0726/text_context.html" beforeDir="false" afterPath="$PROJECT_DIR$/0726/text_context.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +44,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chlwn/IdeaProjects/WebKit/main/JH202407/0730",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chlwn\IdeaProjects\WebKit\main\JH202407\0730" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chlwn\IdeaProjects\WebKit\main\JH202407\0725" />
     </key>
@@ -86,7 +85,11 @@
       <option name="presentableId" value="Default" />
       <updated>1721882294911</updated>
       <workItem from="1721882296005" duration="9385000" />
-      <workItem from="1721956159653" duration="12585000" />
+      <workItem from="1721956159653" duration="12909000" />
+      <workItem from="1721978203003" duration="12000" />
+      <workItem from="1721978329854" duration="4000" />
+      <workItem from="1721978343108" duration="90000" />
+      <workItem from="1722298704789" duration="5357000" />
     </task>
     <task id="LOCAL-00001" summary="날짜별로 파일 분리, 2일차 코드 추가">
       <option name="closed" value="true" />
@@ -96,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721957288497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="실습 파일 추가">
+      <option name="closed" value="true" />
+      <created>1721976551945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721976551945</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="날짜별로 파일 분리, 2일차 코드 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="날짜별로 파일 분리, 2일차 코드 추가" />
+    <MESSAGE value="실습 파일 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="실습 파일 추가" />
   </component>
 </project>
