@@ -3,92 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <style>
-    .reply tr td {
-      border-top: 1px solid black;
-      padding: 4px;
-    }
-    .list {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    .list tr td {
-      border: 1px solid black;
-    }
-  </style>
+    <style>
+        .list {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .list tr td {
+            border: 1px solid black;
+        }
+
+        .reply tr td {
+            border: 0;
+            border-top: 1px solid black;
+            padding: 4px;
+        }
+
+        #addBtn {
+            background: red;
+            color: white;
+            border: 0;
+            width: 150px;
+            height: 60px;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        #addBtn:hover {
+            cursor: pointer;
+        }
+
+        tbody tr td {
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var memberList = [
+            {
+                check: false,
+                num: 1043,
+                image: './img_1.png',
+                name: '홍길동',
+                dept: '개발',
+                level: '대리',
+                rSeq: '3',
+                replyList: [
+                    {num: 1, content: '멋진 사진입니다', name: '박문수'},
+                    {num: 2, content: '좋아요^^ 퍼가요~', name: '일지매'}
+                ]
+            }
+        ];
+        var seq = 1044;
+
+        window.onload = function () {
+            var table = document.querySelector('tbody');
+            var addBtn = document.getElementById('addBtn')
+
+            drawList()
+
+            function drawList() {
+                table.innerHTML = '';
+                memberList.forEach(item => {
+                    table.innerHTML += `
+<tr>
+    <td rowspan="2"><input type="checkbox" ${item.check ? 'checked' : ''}></td>
+    <td rowspan="2">${item.num}</td>
+    <td><img src="${item.image}" alt=""></td>
+    <td>${item.name}</td>
+    <td>${item.dept}</td>
+    <td>${item.level}</td>
+    <td rowspan="2"><button>edit</button></td>
+    <td rowspan="2"><button>delete</button></td>
+</tr>
+<tr>
+    <td colspan="4">
+        <table class="reply" cellspacing="0">
+            <tr>
+                <td>번호</td>
+                <td>댓글 내용</td>
+                <td>작성자</td>
+                <td>수정</td>
+                <td>삭제</td>
+            </tr>
+            ${item.replyList ?
+                        item.replyList.map(reply => `
+            <tr>
+                <td>${reply.num}</td>
+                <td>${reply.content}</td>
+                <td>${reply.name}</td>
+                <td><button>수정</button></td>
+                <td><button>삭제</button></td>
+            </tr>`).join('') : ''}
+        </table>
+    </td>
+</tr>`;
+                });
+            }
+
+            addBtn.addEventListener('click', e => {
+                e.preventDefault()
+                var name = document.getElementById('name').value
+                var dept = document.getElementById('dept').value
+                var level = document.getElementById('level').value
+                var image = document.getElementById('image').value
+
+                memberList.push({check: false, name: name, dept: dept, level: level, image: image, num: seq++, rSeq: 1, replyList: null})
+                drawList()
+            })
+        }
+
+    </script>
 </head>
 <body>
 <form action="" method="post">
-  <label for="name">이름</label>
-  <input type="text" id="name">
-  <br>
-  <label for="dept">부서</label>
-  <input type="text" id="dept">
-  <br>
-  <label for="level">직책</label>
-  <input type="text" id="level">
-  <br>
-  <label for="image">사진</label>
-  <input type="file" id="image">
-  <br> <br>
-  <button style="background: red; color: white; border: 0">새 사원 추가</button>
+    <label for="name">이름</label>
+    <input type="text" id="name">
+    <br>
+    <label for="dept">부서</label>
+    <input type="text" id="dept">
+    <br>
+    <label for="level">직책</label>
+    <input type="text" id="level">
+    <br>
+    <label for="image">사진</label>
+    <input type="file" id="image">
+    <br> <br>
+    <input id="addBtn" type="submit" value="새 사원 추가">
 </form>
+
 <hr>
+
 <button>선택 삭제</button>
 <label for="search">검색</label>
 <select name="search" id="search">
-  <option value="이름">이름</option>
+    <option value="이름">이름</option>
 </select>
 <input type="text">
 <br>
 <table class="list">
-  <tr bgcolor="orange">
-    <td><input type="checkbox"></td>
-    <td>번호</td>
-    <td>사진</td>
-    <td>사원명</td>
-    <td>부서</td>
-    <td>직급</td>
-    <td>수정</td>
-    <td>삭제</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox"></td>
-    <td>1043</td>
-    <td><img src="./img_1.png" alt=""></td>
-    <td>홍길동</td>
-    <td>개발</td>
-    <td>대리</td>
-    <td><button>edit</button></td>
-    <td><button>delete</button></td>
-  </tr>
+    <thead>
+    <tr bgcolor="orange">
+        <td><input type="checkbox"></td>
+        <td>번호</td>
+        <td>사진</td>
+        <td>사원명</td>
+        <td>부서</td>
+        <td>직급</td>
+        <td>수정</td>
+        <td>삭제</td>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+
 </table>
 <br>
-<table class="reply" cellspacing="0">
-  <tr>
-    <td>번호</td>
-    <td>댓글 내용</td>
-    <td>작성자</td>
-    <td>수정</td>
-    <td>삭제</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>멋진 사진입니다</td>
-    <td>박문수</td>
-    <td>수정</td>
-    <td>삭제</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>좋아요^^ 퍼가요~</td>
-    <td>일지매</td>
-    <td>수정</td>
-    <td>삭제</td>
-  </tr>
-  <tr>
-    <td colspan="5">댓글<input type="text">작성자 <input type="text"> <button>댓글입력</button></td>
-  </tr>
-</table>
+
 </body>
 </html>

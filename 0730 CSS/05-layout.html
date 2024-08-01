@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            border: 1px solid navy;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        div.header {
+            overflow: hidden;
+        }
+
+        div.middle {
+            overflow: hidden;
+        }
+
+        div.footer {
+            height: 100px;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        div.header h1 {
+            text-align: center;
+        }
+
+        div.header div {
+            height: 60px;
+        }
+        div.middle > div:nth-child(1) {
+            width: 180px;
+        }
+        div.middle > div:nth-child(2) {
+            width: 590px;
+        }
+        div.middle > div:nth-child(3) {
+            width: 180px;
+        }
+        div.middle > div {
+            float: left;
+            min-height: 480px;
+            overflow: hidden;
+        }
+        div.middle > div > div {
+            float: left;
+            width: 184px;
+            height: 200px;
+        }
+        div.middle > div > div:nth-child(4) {
+            width: 580px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>hello world!</h1>
+        <div></div>
+    </div>
+    <div class="middle">
+        <div></div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>

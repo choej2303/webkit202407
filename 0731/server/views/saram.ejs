@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3><%= message %></h3>
+<h1>Saram page</h1>
+<h2>사람 정보 관리 페이지</h2>
+<table width="100%" border="1">
+    <tr>
+        <th>번호</th>
+        <th>성명</th>
+        <th>이메일</th>
+        <th>나이</th>
+    </tr>
+    <% for (var i = 0; i < saramList.length; i++) { %>
+        <tr align="center">
+            <td><%= saramList[i].no %></td>
+            <td><a href="/saram/detail?no=<%= saramList[i].no %>"><%= saramList[i].name %></a></td>
+            <td><%= saramList[i].email %></td>
+        </tr>
+    <% } %>
+</table>
+</body>
+</html>
